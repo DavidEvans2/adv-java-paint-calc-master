@@ -1,5 +1,5 @@
 package edu.wctc;
-
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ public class PaintCalculator implements Serializable{
     private ArrayList<Room> roomList = new ArrayList<>();
     private Scanner keyboard;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         new PaintCalculator();
     }
 
