@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Room implements Serializable {
     private static int roomCount = 0;
-    private int roomNum;
+    private transient int roomNum;
     private ArrayList<Wall> wallList;
 
     public Room(double length, double width, double height) throws BadWidthException, BadHeightException {
@@ -37,8 +37,8 @@ public class Room implements Serializable {
     @Override
     public String toString() {
 
-        return "Room{" +
-                "roomNum=" + roomNum + "\nArea"+getArea() +
+        return "Room {" +
+                "roomNum = " + roomNum + "\nArea "+ " " + getArea() +
                 '}';
     }
 }

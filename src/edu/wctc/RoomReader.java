@@ -1,3 +1,5 @@
+package edu.wctc;
+
 import edu.wctc.Room;
 
 import java.io.*;

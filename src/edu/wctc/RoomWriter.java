@@ -1,5 +1,6 @@
-import edu.wctc.Room;
+package edu.wctc;
 
+import edu.wctc.Room;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;

@@ -32,11 +32,11 @@ public class PaintCalculator implements Serializable{
                         break;
                     case 2:
                         // writeFile();
-                        new RoomWriter().writeRoomFile("rooms.dat", roomList);
+                        new RoomWriter().writeRoomFile("rooms.txt", roomList);
                         break;
                     case 3:
                         // readFile();
-                        roomList = new RoomReader().readRoomFile("rooms.dat");
+                        roomList = new RoomReader().readRoomFile("rooms.txt");
                         break;
                     case 4:
                         printRooms();
