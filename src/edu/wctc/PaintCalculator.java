@@ -36,7 +36,7 @@ public class PaintCalculator implements Serializable{
                         break;
                     case 3:
                         // readFile();
-                        roomList = new RoomReader().readRoomFile("rooms.dat");
+                        roomList = new RoomReader().readRoomFile("rooms.da");
                         break;
                     case 4:
                         printRooms();
