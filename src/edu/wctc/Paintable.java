@@ -5,7 +5,7 @@ public interface Paintable{
 
     double STANDARD_PAINT_COST_PER_GALLON = 25.99;
 
-    // Cost to paiusing premium paint?
+    // Cost to paint using premium paint?
 
     public double getPremiumCost();
 
