@@ -2,9 +2,9 @@ package edu.wctc;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Room implements Serializable {
-    private static int roomCount = 0;
-    private transient int roomNum;
+public class Room implements Serializable, Paintable {
+     static int roomCount = 0;
+     int roomNum;
     private ArrayList<Wall> wallList;
 
     public Room(double length, double width, double height) throws BadWidthException, BadHeightException {
@@ -33,12 +33,15 @@ public class Room implements Serializable {
 
         return area;
     }
-
-    @Override
-    public String toString() {
-
-        return "Room {" +
-                "roomNum = " + roomNum + "\nArea "+ " " + getArea() +
-                '}';
+    public String toString() {return "Room {" + "roomNum = " + roomNum + "\nArea "+ " " + getArea() + '}';
     }
+    @Override
+    public double getPremiumCost(){
+        return 0;
+    }
+    @Override
+    public double getStandardCost(){
+        return 0;
+    }
+
 }
